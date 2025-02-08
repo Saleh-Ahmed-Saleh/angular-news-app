@@ -1,0 +1,40 @@
+h4 {
+  color: #003366;
+}
+.card {
+  img {
+    width: 100%; /* Make the image fill the card's width */
+    height: 100%; /* Make the image fill the card's height */
+    object-fit: cover; /* Ensure the image covers the entire card area */
+  }
+  width: 275px; /* Set a fixed width for the card */
+  height: 350px; /* Set a fixed height for the card */
+  overflow: hidden; /* Hide anything that goes outside the card */
+  border: 1px solid #003366; /* Optional border for styling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: #f8f8f8; /* Optional background */
+  padding: 10px 10px;
+
+  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #003366;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 5px;
+    background-color: #003366;
+    opacity: 100%;
+    margin-top: 2px;
+    border-radius: 10px;
+
+    &:hover {
+      opacity: 90%;
+    }
+  }
+}

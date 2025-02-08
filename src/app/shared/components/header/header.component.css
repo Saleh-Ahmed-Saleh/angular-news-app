@@ -1,0 +1,20 @@
+#header {
+  background-color: #003366;
+}
+#header #logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: #003366;
+  background-color: #ffffff;
+  padding: 8px 8px;
+  border-radius: 20px 20px 20px 20px;
+}
+#header #navbarNav .nav-item a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px 10px 10px 10px;
+}
+#header #navbarNav .nav-item a:hover {
+  background-color: rgba(255, 255, 255, 0.3843137255);
+}/*# sourceMappingURL=header.component.css.map */

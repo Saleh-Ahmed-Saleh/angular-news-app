@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #003366;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}/*# sourceMappingURL=page-not-found.component.css.map */

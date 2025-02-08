@@ -1,0 +1,30 @@
+<app-ticker></app-ticker>
+<nav class="navbar navbar-expand-lg" id="header">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home" id="logo">News Web</a>
+    <!-- Small Devices -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" *ngFor="let link of links">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="{{ link.link }}"
+            >{{ link.name }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
