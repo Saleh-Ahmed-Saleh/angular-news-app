@@ -2,27 +2,40 @@
 <nav class="navbar navbar-expand-lg" id="header">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/home" id="logo">News Web</a>
-    <!-- Small Devices -->
+
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
+      (click)="toggleNavbar()"
       aria-controls="navbarNav"
-      aria-expanded="false"
+      [attr.aria-expanded]="!isNavbarCollapsed ? 'true' : 'false'"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="4" y="6" width="22" height="2" rx="1" fill="#ffffff"></rect>
+          <rect x="4" y="14" width="22" height="2" rx="1" fill="#ffffff"></rect>
+          <rect x="4" y="22" width="22" height="2" rx="1" fill="#ffffff"></rect>
+        </svg>
+      </span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" *ngFor="let link of links">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            routerLink="{{ link.link }}"
-            >{{ link.name }}</a
-          >
+
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: !isNavbarCollapsed }"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item" *ngFor="let link of links">
+          <a class="nav-link active" routerLink="{{ link.link }}">
+            {{ link.name }}
+          </a>
         </li>
       </ul>
     </div>

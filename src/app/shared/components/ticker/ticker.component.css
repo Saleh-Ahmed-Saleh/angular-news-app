@@ -13,8 +13,8 @@
   display: inline-block;
   padding-right: 50px;
   font-size: 18px;
-  animation: ticker-animation 300s linear infinite;
-  -webkit-animation: ticker-animation 300s linear infinite;
+  animation: ticker-animation 250s linear infinite;
+  -webkit-animation: ticker-animation 250s linear infinite;
 }
 
 .ticker-item {
@@ -31,4 +31,4 @@
   100% {
     transform: translateX(-100%);
   }
-} /*# sourceMappingURL=ticker.component.css.map */
+}/*# sourceMappingURL=ticker.component.css.map */

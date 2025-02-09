@@ -1,5 +1,6 @@
 #header {
   background-color: #003366;
+  box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 }
 #header #logo {
   font-size: 25px;
@@ -16,5 +17,10 @@
   border-radius: 10px 10px 10px 10px;
 }
 #header #navbarNav .nav-item a:hover {
-  background-color: rgba(255, 255, 255, 0.3843137255);
-}/*# sourceMappingURL=header.component.css.map */
+  background-color: rgba(255, 255, 255, 0.384);
+}
+
+#header button .navbar-toggler span .navbar-toggler-icon {
+  color: #ffffff;
+  background-color: #ffffff;
+}

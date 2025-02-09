@@ -1,14 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TickerComponent } from '../ticker/ticker.component';
+import { NgClass, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, CommonModule, TickerComponent],
+  imports: [RouterLink, TickerComponent, NgClass, NgFor],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   links = [
@@ -19,4 +19,10 @@ export class HeaderComponent {
     { name: 'Technology', link: 'technology' },
     { name: 'Science', link: 'science' },
   ];
+
+  isNavbarCollapsed = true;
+
+  toggleNavbar(): void {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
 }
